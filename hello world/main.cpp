@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <string>
 
 // typedef
 typedef std::vector<std::pair<std::string, int>> pairlist_t;
@@ -67,6 +68,33 @@ int main() {
     text_t firstName = "John";
 
     std::cout << firstName << "\n";
+
+    // type conversion
+
+    char c = 100;
+    std::cout << c << "\n";
+
+    int correct = 8;
+    int questions = 10;
+    double score = correct/(double)questions * 100;
+
+    std::cout << score << "%" << "\n";
+
+    // input
+
+    std::string nameInput;
+    std::cout << "What is your name?" << "\n";
+    std::getline(std::cin >> std::ws, nameInput);
+    std::cout << nameInput << "\n";
+
+    int ageInput;
+    //std::cin >> nameInput;
+
+    std::cout << "Hello " << nameInput << "\n" << "What's your age?" << "\n";
+    std::cin >> ageInput;
+    std::cout << nameInput << ": " << ageInput << " years" << '\n';
+
+
 
     return 0;
 }
