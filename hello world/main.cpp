@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <cmath>
 
 // typedef
 typedef std::vector<std::pair<std::string, int>> pairlist_t;
@@ -84,15 +85,58 @@ int main() {
 
     std::string nameInput;
     std::cout << "What is your name?" << "\n";
-    std::getline(std::cin >> std::ws, nameInput);
+    //std::getline(std::cin >> std::ws, nameInput);
     std::cout << nameInput << "\n";
 
     int ageInput;
     //std::cin >> nameInput;
 
     std::cout << "Hello " << nameInput << "\n" << "What's your age?" << "\n";
-    std::cin >> ageInput;
+    //std::cin >> ageInput;
     std::cout << nameInput << ": " << ageInput << " years" << '\n';
+
+    // Useful math related functions
+
+    double d = 3.99;
+    double r = 4;
+    double z;
+
+    //z = std::max(d, r);
+    //z = std::min(d, r);
+    //z = pow(2,3);
+    //z = sqrt(4);
+    //z = abs(-3);
+    //z = round(d);
+    z = floor(d);
+
+    std::cout << z << "\n";
+
+    std::cout << "what's 17 more years?" << "\n";
+
+    double s = 0;
+    double f = 0;
+    double g;
+
+    std::cout << "Enter side A: ";
+    //std::cin >> s;
+
+    std::cout << "Enter side B: ";
+    //std::cin >> f;
+
+    s = pow(s, 2);
+    f = pow(f, 2);
+    g = sqrt(s + f);
+
+    std::cout << "Side C: " << g << "\n";
+
+    // if statements
+
+    int ageAgain;
+
+    std::cout << "Enter age: ";
+    std::cin >> ageAgain;
+
+    if (age >= 18) {}
 
 
 
